@@ -186,7 +186,7 @@ class TetrisApp(object):
                                    (new_x, self.stone_y)):
                 self.stone_x = new_x
     def quit(self):
-        f = open("C:/vscoode work/score.txt", 'a') 
+        f = open("C:/Users/st02/.vscode/CODEX/score.txt", 'a') 
         f.write("%d\n" %self.score)
         f.close()
         
@@ -264,7 +264,7 @@ class TetrisApp(object):
         while 1:  
             self.screen.fill((0,0,0))
             if self.gameover:
-                f = open("C:/vscoode work/score.txt", 'r')
+                f = open("C:/Users/st02/.vscode/CODEX/score.txt", 'r')
                 high_score = 0
                 while True:
                     num = f.readline()
